@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
-echo "My first PHP script!";
+$name = 'Алексей';
+$job = 'Тестировщик';
+$city = 'Йошкар Ола';
+$email = 'warlock.gmail.com';
+$phone = '8932628328';
+$age = '38';
+$skills=[
+'skill_name' => ['HTML','JS','CSS','JSON'],
+'level' => [50,55,45,60]
+]
 ?> 
 
-</body>
-</html>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -38,34 +42,35 @@ echo "My first PHP script!";
         <div class="w3-display-container">
           <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Алексей Яковлев</h2>
+            <h2><?php echo $name ?> </h2>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Профессия</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Город, страна</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>E-mail</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Телефон</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $job ?></p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $city ?></p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $email ?></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $phone ?></p>
+          <p><i class="fa fa-grav fa-fw w3-margin-right w3-large w3-text-teal"></i></i><?php echo $age ?> лет</p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
-          <p>Adobe Photoshop</p>
+          <p><?php echo $skills['skill_name'][0] ?></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills['level'][0] ?>%"><?php echo $skills['level'][0] ?>%</div>
           </div>
-          <p>Photography</p>
+          <p><?php echo $skills['skill_name'][1]?></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills['level'][1] ?>%">
+              <div class="w3-center w3-text-white"><?php echo $skills['level'][1] ?>%</div>
             </div>
           </div>
-          <p>Illustrator</p>
+          <p><?php echo $skills['skill_name'][2]?></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills['level'][2] ?>%"><?php echo $skills['level'][2] ?>%</div>
           </div>
-          <p>Media</p>
+          <p><?php echo $skills['skill_name'][3]?></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills['level'][3] ?>%"><?php echo $skills['level'][3] ?>%</div>
           </div>
           <br>
 
@@ -149,8 +154,6 @@ echo "My first PHP script!";
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
- <!-- End footer -->
- </footer>
 
 </body>
 </html>
