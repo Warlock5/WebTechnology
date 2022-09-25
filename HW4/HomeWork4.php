@@ -38,7 +38,7 @@ echo "My first PHP script!";
         <div class="w3-display-container">
           <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Имя</h2>
+            <h2>Алексей Яковлев</h2>
           </div>
         </div>
         <div class="w3-container">
